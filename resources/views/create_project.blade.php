@@ -445,38 +445,25 @@
 
                 <div class="sidemenu-body">
                     <ul class="sidemenu-nav metisMenu h-100" id="sidemenu-nav" data-simplebar>
-                        <li class="nav-item ">
+                        <li class="nav-item active">
                             <a href="{{route('forum')}}" class="nav-link">
                                 <span class="icon"><i class="flaticon-newspaper"></i></span>
                                 <span class="menu-title">Forums Feed</span>
                             </a>
-                    </li>
-                        <li class="nav-item active">
+                        </li>
+                        <li class="nav-item">
                             <a href="{{url('project')}}" class="nav-link">
                                 <span class="icon"><i class="flaticon-online-shopping"></i></span>
                                 <span class="menu-title">Freelance Project</span>
                             </a>
                         </li>
-                       @if (auth()->user()->role == 3)
+                       @if (auth()->user()->role == 1)
                         <li class="nav-item">
-                            <a href="{{url('project')}}" class="nav-link">
+                            <a href="{{url('users')}}" class="nav-link">
                                 <span class="icon"><i class="flaticon-team"></i></span>
                                 <span class="menu-title">Daftar Users</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{url('project')}}" class="nav-link">
-                                <span class="icon"><i class="flaticon-team"></i></span>
-                                <span class="menu-title">Daftar Forum</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{url('project')}}" class="nav-link">
-                                <span class="icon"><i class="flaticon-team"></i></span>
-                                <span class="menu-title">Daftar Projek</span>
-                            </a>
-                        </li>
-                           
                        @endif
                     </ul>
                 </div>

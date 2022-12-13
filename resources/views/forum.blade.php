@@ -464,7 +464,7 @@
                                 <span class="menu-title">Freelance Project</span>
                             </a>
                         </li>
-                       @if (auth()->user()->role == 3)
+                       @if (auth()->user()->role == 1)
                         <li class="nav-item">
                             <a href="{{url('users')}}" class="nav-link">
                                 <span class="icon"><i class="flaticon-team"></i></span>
